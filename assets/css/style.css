@@ -1,0 +1,96 @@
+/*
+Desarrollador: Rodrigo Arenas González
+    >Contacto mail: rodrigo.arenas@intoconsultancy.com
+    >Contacto tel: 5560072127
+Agencia: INTO Consultancy
+    >Web Page: http://intoconsultancy.com/
+
+*/
+html,
+body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+	outline: none;
+}
+a,aside,body,div,footer,
+form,h1,h2,h3,h4,h5,h6,
+header,html,iframe,img,label,
+li,object,ol,p,pre,span,tbody,
+td,th,tr,ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+
+}
+img {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+}
+
+
+
+
+/*-----P A R A    V E N T A N A S    M O D A L E S-----*/
+
+.non-scroll{overflow: hidden;} /*para evitar que el body haga scrool cuando la ventana modal esta activa*/
+
+/* .main-modal es el contenedo principal de la modal */
+/* La estructura debe estar generada en el HTML */
+
+
+.main-modal{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100000;
+    background: rgba(0, 0, 0, 0.5);
+    overflow-y: scroll;
+}
+.fancy{
+    opacity: 0;
+    pointer-events: none;
+    -webkit-transition: 0.5s ease-in;
+    -moz-transition: 0.5s ease-in;
+    transition: 0.5s ease-in;
+}
+.visible {
+    opacity: 1!important;
+    pointer-events: all!important;
+}
+.close-fancy {
+    background: #2DCCD3;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bolder;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    position: relative;
+    left: 88%;
+    top: -10px;
+     z-index: 100;
+}
+.close-fancy img{
+    width: 20px;
+}
+
+/*-----P A R A    M E N U    P E G A J O S O-----*/
+    /* Todos los cambios se hacen con la clase stiky */
+.stiky{
+    /* CSS modificado */
+}
